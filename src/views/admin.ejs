@@ -1,0 +1,212 @@
+<!doctype html>
+ <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Explore Cali:Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Google Font link-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="css/slick.css"> 
+        <link rel="stylesheet" href="css/slick-theme.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/iconfont.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/bootsnav.css">
+
+
+
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="css/plugins.css" />
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="css/responsive.css" />
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar-collapse" data-offset="100">
+
+
+        <!-- Preloader -->
+        <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_one"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_three"></div>
+                    <div class="object" id="object_four"></div>
+                </div>
+            </div>
+        </div><!--End off Preloader -->
+
+
+        <div class="culmn">
+            <!--Home page style-->
+
+
+            <nav class="navbar navbar-default bootsnav navbar-fixed no-background black">
+
+                <!-- Start Top Search -->
+                <div class="top-search">
+                    <div class="container">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Top Search -->
+
+
+                <div class="container"> 
+                    <div class="attr-nav">
+                        <ul>
+                            <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                        </ul>
+                    </div> 
+
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="#brand">
+                            <h1 class="text-yellow" style = "margin-bottom: 20px">Explore Cali</h1>
+                            
+                        </a>
+
+                    </div>
+                    <!-- End Header Navigation -->
+
+                    <!-- navbar menu -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/p2see">Places to See</a></li>
+                            <li><a href="/p2eat">Places to Eat</a></li>
+                            <li class = active><a href="#">Admin</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div> 
+
+            </nav>
+
+            <div class="container" style = "margin-top: 200px">
+                    <h2>Add Place to Visit</h2>
+                    <form class="form-horizontal" action="/p2see/add" method="GET">
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="name">Name</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="dist">Distance:</label>
+                        <div class="col-sm-10">          
+                          <input type="text" class="form-control" id="dist" placeholder="Enter distance from City" name="dist" required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                            <label class="control-label col-sm-2" for="desc">Description:</label>
+                            <div class="col-sm-10">          
+                              <input type="text" class="form-control" id="desc" placeholder="Enter description" name="desc" required>
+                            </div>
+                          </div>
+                      
+                      <div class="form-group">        
+                        <div class="col-sm-offset-2 col-sm-10">
+                          <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="container" style = "margin-top: 100px">
+                        <h2>Add Place to Eat</h2>
+                        <form class="form-horizontal" action="/p2eat/add" method="GET">
+                          <div class="form-group">
+                            <label class="control-label col-sm-2" for="name">Name</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-sm-2" for="addr">Address:</label>
+                            <div class="col-sm-10">          
+                              <input type="text" class="form-control" id="addr" placeholder="Enter address" name="addr" required>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                                <label class="control-label col-sm-2" for="desc">Known for:</label>
+                                <div class="col-sm-10">          
+                                  <input type="text" class="form-control" id="desc" placeholder="Enter famous items" name="desc" required>
+                                </div>
+                              </div>
+                          <div class="form-group">
+                            <label class="control-label col-sm-2" for="phno">Contact no:</label>
+                            <div class="col-sm-10">          
+                                <input type="text" class="form-control" id="phno" placeholder="Enter contact no" name="phno" required>
+                            </div>
+                            </div>
+                          
+                          <div class="form-group">        
+                            <div class="col-sm-offset-2 col-sm-10">
+                              <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>  
+
+
+
+            
+                <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30 m-top-80">
+                    <div class="col-md-12">
+                        <p class="wow fadeInRight" data-wow-duration="1s">
+                            Made by Team A . All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </footer>
+
+
+
+
+        </div>
+
+        <!-- JS includes -->
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/jquery.magnific-popup.js"></script>
+        <!--<script src="js/jquery.easypiechart.min.js"></script>-->
+        <script src="js/jquery.easing.1.3.js"></script>
+        <!--<script src="js/slick.js"></script>-->
+        <script src="js/slick.min.js"></script>
+        <script src="js/js.isotope.js"></script>
+        <script src="js/jquery.collapse.js"></script>
+        <script src="js/bootsnav.js"></script>
+
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+
+
+    </body>
+</html>
